@@ -1,3 +1,17 @@
+<script type="text/javascript">
+    // Hightlight Current Page in The Menu Item
+    $(document).ready(function () {
+        var pathname = window.location.pathname;
+
+        $(".footer-nav li a").each(function (index) {
+            if (pathname.toUpperCase().indexOf($(this).text().toUpperCase()) != -1)
+                $(this).addClass("footer-active");
+        });
+
+        if ($("a.footer-active").length == 0)
+            $("a.f-home").addClass("footer-active");
+    });
+</script>
 <footer>
 		<div class="wrapper">
 			<div class="copyright">	
@@ -7,8 +21,8 @@
 			</div>
 			<div class="footer-nav">
 				<ul class="col-1">
-					<li><a href="#" class="footer-active">Home</a></li>
-					<li><a href="#">About</a></li>
+					<li><a href="index.html" class="f-home">Home</a></li>
+					<li><a href="about.html">About</a></li>
 					<li><a href="#">Make Changes</a></li>
 					<li><a href="#">Products</a></li>
 					<li><a href="#">Iaso Life</a></li>

@@ -1,8 +1,22 @@
+<script type="text/javascript">
+    // Hightlight Current Page in The Menu Item
+    $(document).ready(function () {
+        var pathname = window.location.pathname;
+
+        $("nav li a").each(function (index) {
+            if (pathname.toUpperCase().indexOf($(this).text().toUpperCase()) != -1)
+                $(this).addClass("main-active");
+        });
+
+        if ($("a.main-active").length == 0)
+            $("a.h-home").addClass("main-active");
+    });
+</script>
 <header>
 		<div class="wrapper">
 			<nav>
 				<ul>
-					<li><a href="index.html" class="main-active">Home</a></li>
+					<li><a href="index.html" class="h-home">Home</a></li>
 					<li><a href="about.html">About</a></li>
 					<li><a href="#">Make Changes</a></li>
 					<li><img src="images/logo_header.png" alt="TLC" /></li>

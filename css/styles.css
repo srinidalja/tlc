@@ -49,6 +49,18 @@ a:hover{
 .bold {
 	font-weight:bold;
 }
+.float-left 
+{
+    float:left;
+}
+.float-right 
+{
+    float:right;
+}
+.clear 
+{
+    clear:both;
+}
 /* Header */
 header {
 	height:160px;
@@ -295,12 +307,48 @@ footer a:hover {
 	padding: 22px;
 	background:url("../images/text_bg.png") no-repeat;
 }
-	
-	
-	
-	
-	
-	
+
+/* About Page */	
+ul.tabs 
+{
+    margin-bottom:50px;
+}	
+ul.tabs li {
+    display: inline;
+    font-size:22px;
+    margin:0 10px;
+}
+
+ul.tabs li a:hover {
+    text-decoration:none;
+}
+.tab-active 
+{
+    border-bottom:3px solid #2cad4a;
+}
+.content {
+    overflow: auto;	
+}
+.content
+{    
+    text-align:left;
+}
+
+.about-copy 
+{
+    width:610px;
+    float:left;   
+}
+.about-image 
+{
+    width:590px;
+    float:right;   
+}
+.about-bottom 
+{
+  height:450px;
+  background:url("../images/about_bottom_img.jpg") no-repeat 0 -190px;  
+}
 	
 	
 	

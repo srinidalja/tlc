@@ -13,20 +13,95 @@
   <![endif]-->
   <style type="text/css">
 	body {
-		background:url("../images/home_top_img.jpg") no-repeat scroll center -85px;
+		background:url("../images/about_top_img.jpg") no-repeat scroll center 75px;
 		background-size:100% auto;
 		-moz-background-size: 100% auto;
 		-webkit-background-size: 100% auto;
-		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/home_top_img.jpg',sizingMethod='scale');
-		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/home_top_img.jpg',sizingMethod='scale')";
+		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/about_top_img.jpg',sizingMethod='scale');
+		-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/about_top_img.jpg',sizingMethod='scale')";
 	}
   </style>
+  <script type="text/javascript">
+      $(function () {
+          $('body').find('.tabbed_area').each(function () {
+              $(this).children('div.content').not(':first').hide();
+          });
+          $("a.tab").click(function () {
+              $(this).parents('.tabs').find('li a.tab-active').removeClass("tab-active");
+              $(this).addClass("tab-active");
+              $(this).parents('.tabbed_area').find('.content').hide();
+              var content_show = $(this).attr("title");
+              $("#" + content_show).fadeIn('fast');
+          });
+      });  
+
+    </script>
 </head>
 <body>
 	<!--#include virtual="header.html" -->
 	
 	<!-- Content Start -->
-
+    <div class="white-bg" style="margin-top:280px;">
+		<div class="torn-edge1-top"></div>
+			<div class="wrapper">      				
+                <div class="tabbed_area">        
+                    <ul class="tabs">  
+                        <li><a href="javascript:void(0);" title="content_1" class="tab tab-active">Vision/Culture</a></li>  
+			            <li><a href="javascript:void(0);" title="content_2" class="tab">Better Products</a></li>  
+			            <li><a href="javascript:void(0);" title="content_3" class="tab">Better Business</a></li>
+                        <li><a href="javascript:void(0);" title="content_4" class="tab">Financial Growth</a></li>  
+                    </ul>            
+                    <div id="content_1" class="content">
+		                <div class="about-copy">
+                            <h3>Vision</h3>		                
+                            <p><a href="#" class="bold">Total Life Changes</a> maintains an active vision of selecting and providing superior products that have a lasting effect on consumer's health while providing these same customers with an opportunity to <a href="#" class="bold">CHANGE</a> their socioeconomic status through a rewarding binary compensation plan.</p>
+                            <p>Tens of thousands of people have already benefited from our signature line of Iaso&trade; Weight-loss and Skin Care products and are well on their way to sustaining a permanent secondary income. TLC will continue to deliver quality products matched with a resilient support team to help you every step of the way.</p>
+                            <h3>Culture</h3>
+                            <p>We have hit amazing heights in these past few years. <a href="#" class="bold">Total Life Changes</a> has crossed borders and landed in boundaries across the globe. As our line of Iaso&trade; products continue to grow, so too do the relationships with TLC reps from all walks of life.</p>                            <p>With offices in eight different countries, it's no wonder that <a href="#" class="bold">TLC</a> members' success rates continue to evolve. We have a dynamic culturally-diverse customer support team with knowledgeable leadership. That's a formula for making lasting relationships. We look forward to meeting you too!</p>
+		                </div>
+		                <div class="about-image">
+                            <img src="images/vision_culture.png" alt="" />		            
+		                </div>
+		            </div>  
+                    <div id="content_2" class="content">
+			            <div class="about-copy">
+                            <h3>Better Products</h3>
+                            <p>TLC's modest beginnings date back more than 15 years with a single product, NutraBurst&trade; Liquid Vitamins. Under Jack Fallon's vision, our commitment was to offer the highest quality, all-natural products that would promote wellness and a sustained quality of life.</p>                            <p>Regardless of how our company has transformed, this commitment remains as strong as ever. Every TLC product has been researched for its purity and effectiveness before it is offered to our representatives and customers, providing the assurance of changing lives for the better.</p>                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus commodo varius nisl, quis tempus ligula congue tempus. Curabitur ac commodo metus, et venenatis tellus. Aenean tincidunt tincidunt aliquam. Nam eget malesuada turpis, congue eleifend purus. Aenean vestibulum mi vitae felis sagittis euismod. Nunc at rhoncus augue. Integer eget lacus est. Duis auctor quis enim at accumsan. Donec a nisi sem. Morbi bibendum augue in nunc hendrerit semper. Nunc suscipit neque sit amet porta hendrerit. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>                            <p>Vestibulum porttitor magna non nunc faucibus, eu adipiscing elit vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut porttitor leo eu metus malesuada, eget fringilla diam sollicitudin. Nulla facilisis porta erat, vel gravida nunc interdum quis. Vestibulum elementum a sem ac eleifend. Ut at massa id sem eleifend ullamcorper. Mauris eget commodo libero, eu molestie urna. Donec tincidunt, odio in consequat euismod, velit enim interdum felis, quis tincidunt ligula dui sit amet eros.</p>                            <p>Nunc urna mi, semper id dui et, consectetur sagittis metus. Maecenas volutpat euismod cursus. Ut gravida diam eu convallis sagittis. Maecenas et molestie nisi. Nunc nec dolor aliquet, suscipit ligula at, tempus dui. Cras ullamcorper gravida nisl, nec malesuada dui vulputate et. Quisque vitae velit ut arcu pellentesque vulputate.</p>                            		                
+		                </div>
+		                <div class="about-image">
+                            <img src="images/better_products.png" alt="" />		            
+		                </div>
+		            </div>  
+                    <div id="content_3" class="content">
+		                <div class="about-copy">
+                            <h3>Better Business</h3>
+                            <p>The second facet of Total Life Changes is Jack's mission to provide an OPPORTUNITY for others to flourish financially, instead of relying on others to help provide for their families. Jack's background in Network Marketing has resulted in a unique approach that allows active reps to earn commissions from wholesale distributors AND retail customers in addition to qualifying for supplementary bonuses.</p>		                
+                            <p>Jack executed an extensive search for an individual to implement his business model and propel TLC and its products toward broader markets.  CHANGE took place in 2010 when Armand Puyolt was named TLC's President. Armand has made tremendous contributions to the success and growth of Total Life Changes. His background and experience in marketing and product distribution dates back some 20 years. Armand's dedication and expertise in providing OPPORTUNITY for others is a large part of TLC's success.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus commodo varius nisl, quis tempus ligula congue tempus. Curabitur ac commodo metus, et venenatis tellus. Aenean tincidunt tincidunt aliquam. Nam eget malesuada turpis, congue eleifend purus. Aenean vestibulum mi vitae felis sagittis euismod. Nunc at rhoncus augue. Integer eget lacus est. Duis auctor quis enim at accumsan. Donec a nisi sem. Morbi bibendum augue in nunc hendrerit semper. Nunc suscipit neque sit amet porta hendrerit. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                            <p>Vestibulum porttitor magna non nunc faucibus, eu adipiscing elit vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut porttitor leo eu metus malesuada, eget fringilla diam sollicitudin. Nulla facilisis porta erat, vel gravida nunc interdum quis. Vestibulum elementum a sem ac eleifend. Ut at massa id sem eleifend ullamcorper. Mauris eget commodo libero, eu molestie urna. Donec tincidunt, odio in consequat euismod, velit enim interdum felis, quis tincidunt ligula dui sit amet eros.</p>
+		                </div>
+		                <div class="about-image">
+                            <img src="images/better_business.png" alt="" />			            
+		                </div>
+		            </div>
+                    <div id="content_4" class="content">
+		                <div class="about-copy">
+                            <h3>Financial Growth</h3>
+                            <p>The result of TLC's commitment to excellence is an astounding growth rate of over 700% during the past two years. People from all walks of life, from all around the globe have discovered the benefits of belonging to TLC and using its emergent line of products. And the growth is just beginning. You may have been disheartened by inferior companies. Now is the time to examine our Iaso&trade; products and incredible compensation plan.</p>                            <p>Join Total Life Changes and take advantage of our Iaso&trade; products and supportive customer support team. Discover how to truly CHANGE your life today!</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus commodo varius nisl, quis tempus ligula congue tempus. Curabitur ac commodo metus, et venenatis tellus. Aenean tincidunt tincidunt aliquam. Nam eget malesuada turpis, congue eleifend purus. Aenean vestibulum mi vitae felis sagittis euismod. Nunc at rhoncus augue. Integer eget lacus est. Duis auctor quis enim at accumsan. Donec a nisi sem. Morbi bibendum augue in nunc hendrerit semper. Nunc suscipit neque sit amet porta hendrerit. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+                            <p>Vestibulum porttitor magna non nunc faucibus, eu adipiscing elit vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut porttitor leo eu metus malesuada, eget fringilla diam sollicitudin. Nulla facilisis porta erat, vel gravida nunc interdum quis. Vestibulum elementum a sem ac eleifend. Ut at massa id sem eleifend ullamcorper. Mauris eget commodo libero, eu molestie urna. Donec tincidunt, odio in consequat euismod, velit enim interdum felis, quis tincidunt ligula dui sit amet eros.</p>
+		                </div>
+		                <div class="about-image">
+                            <img src="images/financial_growth.png" alt="" />			            
+		                </div>
+		            </div>       
+                </div>                    
+			</div>
+		<div class="torn-edge1-bottom"></div>
+	</div>
+    <div class="about-bottom">
+    
+    </div>   
 	<!-- Content End -->
 	
 	<!--#include virtual="footer.html" -->
