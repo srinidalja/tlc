@@ -24,6 +24,12 @@ h3 {
 	font-size:35px;
 	margin-bottom:10px;
 }
+h5 
+{   
+    font-family: 'Open Sans Condensed',sans-serif;
+    font-size:25px;
+    margin-bottom:10px;    
+}
 p {
 	line-height:normal;
 	margin-bottom:15px;
@@ -39,11 +45,19 @@ p {
 .button:hover {
 	text-decoration:none;
 }
+.banner-button 
+{
+    text-align:center;
+    margin:50px 0;
+}
 a {
 	color:#2cad4a;		
 	text-decoration:none;
 }
 a:hover{
+	text-decoration:none;
+}
+p a:hover{
 	text-decoration:underline;
 }
 .bold {
@@ -60,6 +74,18 @@ a:hover{
 .clear 
 {
     clear:both;
+}
+.text-center 
+{
+    text-align:center;
+}
+.text-left
+{
+    text-align:left;
+}
+.text-right
+{
+    text-align:right;
 }
 /* Header */
 header {
@@ -206,7 +232,6 @@ footer a:hover {
 	margin-top: 50px;
     width: 600px;
 	float:left;
-	text-align:center;
 }
 .product-image {
 	float:right;
@@ -233,7 +258,7 @@ footer a:hover {
 
 .white-bg {
 	background-color:#fff;
-	padding:100px 0;
+	padding:50px 0;
 	text-align:center;
 	position:relative;
 }
@@ -315,7 +340,7 @@ ul.tabs
 }	
 ul.tabs li {
     display: inline;
-    font-size:22px;
+    font-size:25px;
     margin:0 10px;
 }
 
@@ -349,7 +374,300 @@ ul.tabs li a:hover {
   height:450px;
   background:url("../images/about_bottom_img.jpg") no-repeat 0 -190px;  
 }
-	
-	
-	
-	
+
+/* Make Changes Page */	
+
+.make-changes-banner 
+{
+    width:1100px;
+	height:450px;
+	padding:25px 50px;
+    background:url("../images/make_changes_banner_bg.png") no-repeat 0 0;
+}
+.gift-box 
+{
+    background:url("../images/gift_icon.png") no-repeat 0 0;
+    padding-left:66px;
+    margin-top:15px;
+}	
+.gift-box h4 
+{   
+    font-family: 'Open Sans Condensed',sans-serif;    
+    font-size:25px;
+    font-weight:bold;
+    margin-bottom: 15px;    
+}
+.make-changes-left 
+{
+    width: 550px;
+    margin: 90px 0 0 30px;
+    float:left;
+}
+.make-changes-right 
+{
+    width:160px;
+    margin: 150px 180px 0 0;
+    float:right;
+}
+.step1, .step2, .step3 
+{    
+    display: inline-block;
+    padding: 5px 0 5px 40px;
+}
+.step1 
+{
+    background:url("../images/thumsup_icon.png") no-repeat 0 center; 
+}
+.step2 
+{
+    background:url("../images/check_icon.png") no-repeat 0 center; 
+}
+.step3 
+{
+    background:url("../images/badge_icon.png") no-repeat 0 center; 
+}
+.change_challenge, .winnew_skin 
+{
+    width:300px;
+    display:inline-block;
+    margin:0 60px;
+} 
+.change_challenge p, .winnew_skin p 
+{
+    text-align:left;
+    margin:20px 0;
+}
+.iaso_kits_bg 
+{
+    background:url("../images/change_challenge_step2_bg.jpg") no-repeat 0 -90px;
+	padding:50px 0 100px 0;
+	text-align:center;
+}
+.iaso_skinkit, .iaso_fitkit
+{
+    display:inline-block;
+    margin:0 100px;
+}
+.iaso_skinkit h5, .iaso_fitkit h5
+{
+    font-size:40px;
+    margin:20px 0;
+}
+.prizes 
+{
+    width:300px;
+    display:inline-block;
+    margin:0 40px;
+}
+.prizes p 
+{
+    text-align:left;
+    margin:20px 0;
+}
+.make-changes-bottom 
+{
+    background:url("../images/make_changes_bottom_bg.jpg") no-repeat 0 -90px;
+    height:510px;
+}
+
+/* Products */
+.products-banner 
+{
+    background:url("../images/products_banner_bg.png") no-repeat 0 0;
+    height: 350px;
+    padding: 75px 50px;
+}
+.products-banner .product-image 
+{
+    margin-top:0;
+}
+.subheading 
+{
+    font-family: 'Open Sans Condensed',sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.products-nav 
+{
+    margin-bottom:30px;
+}
+.products-nav li 
+{
+    display: inline;
+    font-size:25px;
+    margin:0 10px;
+}
+.thumbs 
+{
+    background:url("../images/thumb_bg.png") no-repeat center 0;
+    display:inline-block;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    text-align: center;
+    width:295px;
+}
+.thumbs img 
+{
+    height: 140px;
+    margin-top: 10px;
+}
+.thumbs h4 
+{   
+    font-family: 'Open Sans Condensed',sans-serif;
+    font-size:25px;
+}
+.info-wrapper 
+{
+    background:#fff;
+    position:relative;
+    top:-500px;;
+    left:0;
+    display:none;
+}
+.info-breadcrumb span 
+{
+    color:#000;
+}
+.info-container 
+{
+    background:url("../images/product_info_bg.png") no-repeat 0 0;
+    background-size:100% auto;
+    height:1365px;
+    color:#fff;
+    padding:60px;    
+}
+.info-container h4 
+{
+    color:#fff;
+    font-size:30px;
+    text-align:center;
+}
+.info-left, .info-right 
+{
+    display:inline-block;
+    vertical-align:top;
+}
+.info-left 
+{
+    width:270px;
+    margin-right: 50px;
+}
+.info-right 
+{
+    width:750px;
+}
+.info-thumb 
+{   
+    width: 205px;  
+    height: 205px;
+    padding: 30px;    
+    background:#fff;
+    text-align:center;
+}
+.info-thumb img 
+{
+    height:100%;
+}
+.kits img 
+{
+    width:100%!important;
+}
+.info-left a
+{
+    font-size:25px;
+    display:block;
+    margin:10px 0;
+    padding:6px 0 6px 35px;
+}
+.info-button 
+{
+    background:url("../images/buy_now_bg.png") no-repeat center 0;
+    font-size: 30px!important;
+    padding: 10px 0 18px!important;
+    text-align: center;
+    margin-top:25px!important;
+}
+.factsheet, .ingredients, .faqs 
+{
+    color:#fff!important;
+    font-weight:bold;
+    background:url("../images/fact_sheet_icon.png") no-repeat 0 5px;
+    padding-left:30px;
+}
+
+.ingredients 
+{
+ background-position:0 -40px;
+}
+.faqs 
+{
+  background-position:0 -90px; 
+}    
+.info-header div 
+{
+    display:inline-block;
+}
+.info-header-left 
+{
+    width:565px;
+}
+.info-header-left h4 
+{
+    margin-top:0!important;
+}
+.info-header-left p 
+{
+    font-size:30px;
+}
+.info-header-right 
+{
+    width:180px;
+    text-align:right;
+    vertical-align:top;
+}
+.info-header-right p 
+{
+    font-size:40px;
+}
+.info-content, .testimonials-wrapper 
+{
+    overflow:auto;
+}
+.hr 
+{
+    border-bottom:1px solid #fff;
+    margin:10px 0 30px 0;
+}
+.testimonials 
+{
+    margin-bottom:30px;
+}
+.testimonials img 
+{
+    vertical-align:top;
+}
+.testimonials p 
+{
+    width:460px;
+    margin-left:30px;
+    display:inline-block;
+}
+.info-right h4 
+{
+    font-family: 'Open Sans Condensed',sans-serif;
+    font-size:25px;
+    text-align:left;
+    font-weight:bold;
+    margin:20px 0 10px 0;
+}
+.kits_bottom 
+{
+     background:url("../images/kits_bottom_bg.jpg") no-repeat center 0;
+     height:560px;
+}
+.nutritional_bottom 
+{
+    background:url("../images/nutrional_bottom_bg.jpg") no-repeat center 0;
+    height:560px;
+}
