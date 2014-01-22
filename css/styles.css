@@ -498,6 +498,10 @@ ul.tabs li a:hover {
     font-size:25px;
     margin:0 10px;
 }
+.products-thumbs 
+{
+    position:relative;
+}
 .thumbs 
 {
     background:url("../images/thumb_bg.png") no-repeat center 0;
@@ -520,10 +524,11 @@ ul.tabs li a:hover {
 .info-wrapper 
 {
     background:#fff;
-    position:relative;
-    top:-500px;;
+    position:absolute;
+    top:0;
     left:0;
     display:none;
+    text-align:left;
 }
 .info-breadcrumb span 
 {
@@ -572,6 +577,7 @@ ul.tabs li a:hover {
 .kits img 
 {
     width:100%!important;
+    height:auto!important;
 }
 .info-left a
 {
@@ -661,13 +667,27 @@ ul.tabs li a:hover {
     font-weight:bold;
     margin:20px 0 10px 0;
 }
+.kits_bottom, .nutritional_bottom, .skincare_bottom, .iasocafe_bottom, .viewall_bottom  
+{
+    height:560px;
+}
 .kits_bottom 
 {
-     background:url("../images/kits_bottom_bg.jpg") no-repeat center 0;
-     height:560px;
+    background:url("../images/kits_bottom_bg.jpg") no-repeat center 0;     
 }
 .nutritional_bottom 
 {
-    background:url("../images/nutrional_bottom_bg.jpg") no-repeat center 0;
-    height:560px;
+    background:url("../images/nutrional_bottom_bg.jpg") no-repeat center 0;   
 }
+.skincare_bottom 
+{
+    background:url("../images/skincarel_bottom_bg.jpg") no-repeat center 0;
+}
+.iasocafe_bottom 
+{
+    background:url("../images/iasocafe_bottom_bg.jpg") no-repeat center -430px;     
+}
+.viewall_bottom 
+{
+    background:url("../images/viewall_bottom_bg.jpg") no-repeat center 0;
+} 

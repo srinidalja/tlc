@@ -43,7 +43,7 @@
                     <li><a href="products_viewall.html">View All</a></li>
                 </ul>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lacinia convallis diam, quis cursus elit porta nec. Curabitur tristique consectetur est, eu iaculis nibh hendrerit quis. Curabitur viverra, purus ac accumsan euismod, justo nunc pretium metus, a pharetra mauris magna at elit. Maecenas et nunc sed eros condimentum tristique sed id dolor. Mauris libero odio, adipiscing et gravida varius, suscipit sed lacus. Nullam tempor at dui non pellentesque. Integer tellus nisl, placerat id ligula ut, ultricies iaculis lorem. Integer varius sollicitudin diam id molestie. Vivamus non vulputate lorem. Ut adipiscing nisl ut pharetra porttitor.</p>	
-                <div class="products-thumbs">
+                <div class="products-thumbs text-center">
                     <div class="thumbs">
                         <a href="javascript:void(0);" title="fit_kit"><img src="images/iaso_fit_kit.png" alt="Fit Kit" /></a>
                         <h4>Fit Kit</h4>
@@ -64,8 +64,7 @@
                         <a href="javascript:void(0);" title="weightloss_kit2"><img src="images/weight_loss_kit2.png" alt="Weight Loss Kit 2" /></a>
                         <h4>Weight Loss Kit 2</h4>
                     </div>
-                </div>                
-                <div class="info-wrapper" id="fit_kit"><!-- Fit Kits Start -->
+                    <div class="info-wrapper" id="fit_kit"><!-- Fit Kits Start -->
                     <h5 class="info-breadcrumb"><a href="javascript:void(0);" title="fit_kit">Kits</a><span> / Fit Kit</span></h5>
                     <div class="info-container">
                         <div class="info-left">
@@ -259,6 +258,7 @@
                         </div>
                     </div>
                 </div><!-- Weight Loss Kit 1 End -->
+                </div>                                
 			</div>
 		<div class="torn-edge1-bottom"></div>
 	</div>
@@ -268,22 +268,16 @@
 	<!--#include virtual="footer.html" -->
 	
 	<script type="text/javascript">
-		$(window).load(function(){
-		  $('.flexslider').flexslider({
-			animation: "slide",
-			start: function(slider){
-			  $('body').removeClass('loading');
-			}
-		  });
-        });
-
         // Products info container show/hide
-        $('.thumbs a').click(function () {
-            $('#' + $(this).attr('title')).fadeIn('fast');
-        });
-        $('.info-breadcrumb a').click(function () {
-            $('#' + $(this).attr('title')).fadeOut('fast');
-        });
+	    $('.thumbs a').click(function () {
+	        $('#' + $(this).attr('title')).fadeIn('fast');
+	        var height = $('#' + $(this).attr('title')).height();
+	        $('.products-thumbs').height(height);
+	    });
+	    $('.info-breadcrumb a').click(function () {
+	        $('#' + $(this).attr('title')).fadeOut('fast');
+	        $('.products-thumbs').css('height', 'auto');
+	    });
 	</script>
 </body>
 </html>
