@@ -1,28 +1,28 @@
 <script type="text/javascript">
-    // Hightlight Current Page in The Menu Item
+    // Add a css class to current page nav item
     $(document).ready(function () {
         var pathname = window.location.pathname;
 
-        $("nav li a").each(function (index) {
-            if (pathname.toUpperCase().indexOf($(this).text().toUpperCase()) != -1)
-                $(this).addClass("main-active");
-        });
+        var pageName = pathname.substr(pathname.lastIndexOf('/') + 1);
 
-        if ($("a.main-active").length == 0)
-            $("a.h-home").addClass("main-active");
+        if (pathname.indexOf('.') != -1) {
+            pageName = pageName.substr(0, pathname.lastIndexOf('.') - 1);
+        }
+
+        $("#nav_" + pageName).addClass("main-active");       
     });
 </script>
 <header>
 		<div class="wrapper">
 			<nav>
 				<ul>
-					<li><a href="index.html" class="h-home">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="make_changes.html">Make Changes</a></li>
+					<li><a href="index.html" id="nav_home">Home</a></li>
+					<li><a href="about.html" id="nav_about">About</a></li>
+					<li><a href="make_changes.html" id="nav_make_changes">Make Changes</a></li>
 					<li><img src="images/logo_header.png" alt="TLC" /></li>
-					<li><a href="products_kits.html">Products</a></li>
-					<li><a href="#">Iaso Life</a></li>
-					<li><a href="#">Contact Us</a></li>
+					<li><a href="products_kits.html" id="nav_products_kits">Products</a></li>
+					<li><a href="iaso_life.html" id="nav_iaso_life">Iaso Life</a></li>
+					<li><a href="contactus.html" id="nav_contactus">Contact Us</a></li>
 				</ul>
 			</nav>
 			<div class="heade-right">

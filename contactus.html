@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Total Life Change</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="js/jquery.flexslider-min.js"></script>
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <style type="text/css">
+	body {
+		background:url("../images/contactus_top_img.jpg") no-repeat scroll center 75px;
+	}
+  </style>
+  <script type="text/javascript">
+      $(function () {
+          $('body').find('.tabbed_area').each(function () {
+              $(this).children('div.content').not(':first').hide();
+          });
+          $("a.tab").click(function () {
+              $(this).parents('.tabs').find('li a.tab-active').removeClass("tab-active");
+              $(this).addClass("tab-active");
+              $(this).parents('.tabbed_area').find('.content').hide();
+              var content_show = $(this).attr("title");
+              $("#" + content_show).fadeIn('fast');
+          });
+      });  
+
+    </script>
+</head>
+<body>
+	<!--#include virtual="header.html" -->
+	
+	<!-- Content Start -->
+    <div class="contact-top">
+        <h3>Join Us As We Continue Our Worldwide Expasion In 2014</h3>
+    </div>
+    <div class="white-bg">
+		<div class="torn-edge1-top"></div>
+			<div class="wrapper">      				
+                 <div class="tabbed_area">        
+                    <ul class="tabs">  
+                        <li><a href="javascript:void(0);" title="content_1" class="tab tab-active">USA</a></li>  
+			            <li><a href="javascript:void(0);" title="content_2" class="tab">Mexico</a></li>  
+			            <li><a href="javascript:void(0);" title="content_3" class="tab">Tijuana</a></li>
+                        <li><a href="javascript:void(0);" title="content_4" class="tab">Columbia</a></li>  
+                        <li><a href="javascript:void(0);" title="content_5" class="tab">El Salvador</a></li>  
+                        <li><a href="javascript:void(0);" title="content_6" class="tab">India</a></li>  
+                        <li><a href="javascript:void(0);" title="content_7" class="tab">Bangladesh</a></li>  
+                        <li><a href="javascript:void(0);" title="content_8" class="tab">Ecuadar</a></li>  
+                        <li><a href="javascript:void(0);" title="content_9" class="tab">Peru</a></li>  
+                    </ul>            
+                    <div id="content_1" class="content">
+		                <div class="world_map">
+                           <img class="usa-pin" src="images/pin_point.png" alt="" />
+		                </div>
+		                <div class="address_bg">
+                           <div class="address">
+                                <h3>U.S.A</h3>
+                                <p>Total Life Changes, LLC</p>                                <p>9453 Marine City Hwy Ira, MI. 48023</p>                                <p>1-888-873-1898</p>                                <p>info@totallifechanges.com</p>                            
+                            </div>
+		                </div>
+		            </div>
+                    <div id="content_2" class="content">
+		                <div class="world_map">
+                           <img class="mexico-pin" src="images/pin_point.png" alt="" />
+		                </div>
+                        <div class="address_bg">
+		                    <div class="address">
+                                <h3>Mexico</h3>
+                                <p>&lt;address&gt;</p>                                                        
+		                    </div>
+                        </div>
+		            </div>  
+                    <div id="content_3" class="content">
+		                <div class="world_map">
+                           <img class="tijuana-pin" src="images/pin_point.png" alt="" />
+		                </div>
+                        <div class="address_bg">
+		                    <div class="address">
+                                <h3>Tijuana</h3>
+                                <p>&lt;address&gt;</p>                                                        
+		                    </div>
+                        </div>
+		            </div>
+                    <div id="content_4" class="content">
+		                <div class="world_map">
+                           <img class="columbia-pin" src="images/pin_point.png" alt="" />
+		                </div>
+                        <div class="address_bg">
+		                    <div class="address">
+                                <h3>Columbia</h3>
+                                <p>&lt;address&gt;</p>                                                        
+		                    </div>
+                        </div>
+		            </div>
+                    <div id="content_5" class="content">
+		                <div class="world_map">
+                           <img class="elsalvador-pin" src="images/pin_point.png" alt="" />
+		                </div>
+                        <div class="address_bg">
+		                    <div class="address">
+                                <h3>El Salvador</h3>
+                                <p>&lt;address&gt;</p>                                                        
+		                    </div>
+                        </div>
+		            </div>
+                    <div id="content_6" class="content">
+		                <div class="world_map">
+                           <img class="india-pin" src="images/pin_point.png" alt="" />
+		                </div>
+                        <div class="address_bg">
+		                    <div class="address">
+                                <h3>India</h3>
+                                <p>&lt;address&gt;</p>                                                        
+		                    </div>
+                        </div>
+		            </div>
+                    <div id="content_7" class="content">
+		                <div class="world_map">
+                           <img class="bangladesh-pin" src="images/pin_point.png" alt="" />
+		                </div>
+                        <div class="address_bg">
+		                    <div class="address">
+                                <h3>Bangladesh</h3>
+                                <p>&lt;address&gt;</p>                                                        
+		                    </div>
+                        </div>
+		            </div>
+                    <div id="content_8" class="content">
+		                <div class="world_map">
+                           <img class="ecuador-pin" src="images/pin_point.png" alt="" />
+		                </div>
+                        <div class="address_bg">
+		                    <div class="address">
+                                <h3>Ecuador</h3>
+                                <p>&lt;address&gt;</p>                                                        
+		                    </div>
+                        </div>
+		            </div>
+                    <div id="content_9" class="content">
+		                <div class="world_map">
+                           <img class="peru-pin" src="images/pin_point.png" alt="" />
+		                </div>
+                        <div class="address_bg">
+		                    <div class="address">
+                                <h3>Peru</h3>
+                                <p>&lt;address&gt;</p>                                                        
+		                    </div>
+                        </div>
+		            </div>                                         
+                </div>                   
+			</div>
+		<div class="torn-edge1-bottom"></div></div>
+    <div class="contact-bottom">       
+    </div>   
+	<!-- Content End -->
+	
+	<!--#include virtual="footer.html" -->
+</body>
+</html>

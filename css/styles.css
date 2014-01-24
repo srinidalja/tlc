@@ -65,27 +65,31 @@ p a:hover{
 }
 .float-left 
 {
-    float:left;
+    float:left!important;
 }
 .float-right 
 {
-    float:right;
+    float:right!important;
 }
 .clear 
 {
-    clear:both;
+    clear:both!important;
 }
 .text-center 
 {
-    text-align:center;
+    text-align:center!important;
 }
 .text-left
 {
-    text-align:left;
+    text-align:left!important;
 }
 .text-right
 {
-    text-align:right;
+    text-align:right!important;
+}
+.relative 
+{
+    position:relative;
 }
 /* Header */
 header {
@@ -106,9 +110,9 @@ nav, .heade-right {
 	text-align: right;
 }
 nav {
-	width:1015px;
+	width:825px;
 	text-align: center;
-	margin-top: 17px;
+	margin:17px 0 0 190px;
 }
 nav  ul li {
 	display:inline-block;
@@ -164,7 +168,7 @@ footer a:hover {
 	float:left;
 }
 .copyright, .footer-nav, .login-social-links {
-	margin-right:100px;
+	margin-right:90px;
 	
 }
 .copyright p {
@@ -330,7 +334,7 @@ footer a:hover {
 }
 .shop_our_store h3 {
 	padding: 22px;
-	background:url("../images/text_bg.png") no-repeat;
+	background:url("../images/text_bg.png") no-repeat center center;
 }
 
 /* About Page */	
@@ -351,23 +355,22 @@ ul.tabs li a:hover {
 {
     border-bottom:3px solid #2cad4a;
 }
-.content {
-    overflow: auto;	
-}
 .content
 {    
     text-align:left;
 }
-
+.about-copy, .about-image 
+{
+    display:inline-block;
+    vertical-align:top;
+}
 .about-copy 
 {
-    width:610px;
-    float:left;   
+    width:610px;       
 }
 .about-image 
 {
-    width:590px;
-    float:right;   
+    width:550px;       
 }
 .about-bottom 
 {
@@ -457,6 +460,7 @@ ul.tabs li a:hover {
 {
     width:300px;
     display:inline-block;
+    vertical-align: top;
     margin:0 40px;
 }
 .prizes p 
@@ -690,4 +694,214 @@ ul.tabs li a:hover {
 .viewall_bottom 
 {
     background:url("../images/viewall_bottom_bg.jpg") no-repeat center 0;
-} 
+}
+
+/* Iaso Life */ 
+
+.iaso-life-banner 
+{
+    height: 360px;
+    padding: 90px 600px 60px 94px;
+    width: 510px;
+    background:url("../images/iasolife_banner_bg.png") no-repeat 0 0;
+}
+.mega-phone 
+{
+    background:url("../images/megaphone_icon.png") no-repeat 0 0;
+    padding-left:75px;
+    margin-top:15px;
+}	
+.mega-phone h4 
+{   
+    font-family: 'Open Sans Condensed',sans-serif;    
+    font-size:25px;
+    font-weight:bold;
+    margin-bottom: 15px;    
+}
+.socla-links ul li
+{
+    display:inline-block;
+}
+.socla-links li.blog-link {
+    margin-left: 100px;
+}
+.socla-links li.blog-link a 
+{
+    font-size:22px;
+}
+    
+
+.si {
+	display:inline-block;
+	background:url("../images/social_icons_banner.png") no-repeat left top;
+	padding:9px 15px;
+	margin-right:5px;
+}
+.si-fb {background-position:0 0;}
+.si-gp {background-position:-40px 0;}
+.si-in {background-position:-82px 0;}
+.si-pi {background-position:-121px 0;}
+.si-tm {background-position:-163px 0;}
+.si-tw {background-position:-204px 0;}
+.si-yt {background-position:-244px 0;}
+.c_and_t, .l_and_r, .h_and_r 
+{    
+    display: inline-block;
+    padding: 5px 0 5px 50px;
+}
+.c_and_t 
+{
+    background:url("../images/user_icon.png") no-repeat 0 center; 
+}
+.l_and_r 
+{
+    background:url("../images/stack_icon.png") no-repeat 0 center; 
+}
+.h_and_r 
+{
+    background:url("../images/recipes_icon.png") no-repeat 0 center; 
+}
+.l_and_r_img 
+{
+    margin-bottom:50px;
+}
+.middle-img
+{
+    margin:0 130px;
+}
+.l_and_r_txt div
+{
+    display:inline-block;
+}
+.l_and_r_txt .col-1 
+{
+    width:830px;
+    text-align:left;
+}
+.l_and_r_txt .col-2 
+{
+    width:300px;
+    vertical-align: top;
+}
+.iasolife-bottom 
+{
+    background:url("../images/iasolife_bottom_bg.jpg") no-repeat 0 -90px;
+    height:510px;
+}
+.popup 
+{
+    background:url("../images/popup_bg.png") no-repeat 0 0;
+    width:1235px;
+    height:495px;
+    display:none;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.popup ul 
+{
+    overflow:auto;
+    width: 1200px;
+    height:400px;
+    margin-top: 20px;
+}
+.popup ul li 
+{
+    display:inline-block;
+    color:#fff;
+    font-size:20px;
+    margin:0 15px 15px 20px;
+}
+.popup-inner 
+{
+    position:relative;
+    padding-top:30px;
+}
+.close-btn 
+{
+    position:absolute;
+    right: 15px;
+    top: 15px;
+    cursor:pointer;
+}
+.recipe_details li {
+ vertical-align: top;
+ width: 350px;
+ text-align:left;
+}
+.recipe_details p 
+{
+    font-size:16px;
+}
+.recipe_details h4 
+{
+    font-family: 'Open Sans Condensed',sans-serif;
+    font-size:25px;
+    font-weight:bold;
+}
+.recipe_details h4, .recipe_details h5 
+{
+    color:#fff;
+}
+
+/* Contact Us */
+
+.contact-bottom 
+{
+    height:450px;
+    background:url("../images/contactus_bottom_img.jpg") no-repeat 0 -190px;  
+}
+
+.contact-top 
+{
+    padding:320px 0 70px;
+}
+.contact-top h3 {
+	padding: 22px;
+	text-align:center;
+	background:url("../images/text_bg.png") no-repeat center center;
+}
+.world_map, .address_bg 
+{
+    display:inline-block;
+    vertical-align:middle;
+    margin: 50px 0;
+}
+.world_map 
+{
+    background:url("../images/world_map.png") no-repeat center center;    
+    width:830px;
+    height:395px;
+    position:relative;
+}
+.world_map img 
+{
+    position:absolute;
+}
+.usa-pin {top:130px;left:160px;}
+.mexico-pin {top:175px;left:145px;}
+.tijuana-pin {top:146px;left:105px;}
+.columbia-pin {top:145px;left:195px;}
+.elsalvador-pin {top:192px;left:172px;}
+.india-pin {top:170px;left:550px;}
+.bangladesh-pin {top:180px;left:585px;}
+.ecuador-pin {top:230px;left:195px;}
+.peru-pin {top:250px;left:205px;}
+.address_bg 
+{
+    background:url("../images/address_bg.png") no-repeat center center;    
+    width:360px;
+    height:360px;
+    text-align: center;
+}
+.address 
+{
+    display:inline-block;
+    text-align:center;
+    margin-top: 100px;
+}
+.address  p 
+{
+    margin-bottom:0;
+    line-height:normal;
+}
